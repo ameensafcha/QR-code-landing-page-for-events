@@ -12,11 +12,20 @@
             box-sizing: border-box;
         }
 
+        :root{
+            --primary-green:#2E5A35;
+            --light-green:#E8F5E9;
+            --text-dark:#1A1A1A;
+            --text-gray:#666666;
+        }
+
         
 
         body {
             min-height: 100vh;
-            font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+            /* font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; */
+
+            font-family: 'Times New Roman', Times, serif;
             display: flex;
             justify-content: center; 
             align-items: center;
@@ -37,8 +46,8 @@
         }
 
         .profile {
-            width: 7.5rem;
-            border: 2px solid white;
+            width: 10.5rem;
+            border: 4px solid white;
             aspect-ratio: 1;
             border-radius: 50%;
             object-fit: cover;
@@ -48,43 +57,52 @@
         }
 
         .title h1 {
-            font-size: 2rem;
-            font-weight: 600;
+            font-size: 3rem;
+            font-weight: 500;
             margin-bottom: 0.5rem;
+            opacity: 90%;
+            
         }
 
         .title p{
-            font-weight: 400;
+            font-size: 1.2rem;
+            font-weight: 500;
+            /* opacity: 95%; */
+            padding: 0rem 1.4rem;
+            text-align: center;
         }
 
         .links {
             width: 100%; 
             display: flex;
             flex-direction: column;
-            gap: 0.8rem;
+            gap: 1rem;
+
         }
 
         .links a {
             width: 100%;
+            box-shadow: 0 0 5px 1px var(--primary-green);
+            color: white;
             display: flex;
             align-items: center;
             justify-content: center;
-            gap: 0.5rem;
-            padding: 0.8rem ;
-            background: #244a2c;
-            color: #fff;
+            gap: 0.7rem;
+            padding: 1.4rem  ;
+            background:var(--primary-green) ;
             text-decoration: none;
             border-radius: 2rem;
-            font-size: 1rem;
+            font-size: 1.2rem;
             font-weight: 500;
             position: relative;
+            
         }
 
         .icon {
             width: 1.6rem;
             height: 1.6rem;
             flex-shrink: 0;
-            
+            filter:invert(1)            
         }
 
         .links a span {
@@ -130,7 +148,7 @@
 
         <div class="title">
             <h1>SAFCHA</h1>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing </p>
+            <p>Lorem ipsum dolor sit amet  aut velit suscipit</p>
         </div>
 
 
