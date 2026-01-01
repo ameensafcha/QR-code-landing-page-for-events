@@ -32,7 +32,9 @@
         :root{
             --primary-green:#2E5A35;
             --light-green:#E8F5E9;
-            --text-blue:#3E5C96;
+            /* --text-blue:#3E5C96; */
+            --text-blue:#2E5A35;
+
             --font-primary: "SafchaFont", system-ui, sans-serif;
         }
 
@@ -238,7 +240,8 @@
             width: 1.8rem;
             height: 1.8rem;
             flex-shrink: 0;
-            filter: invert(33%) sepia(34%) saturate(749%) hue-rotate(186deg) brightness(94%) contrast(92%);
+             filter: invert(23%) sepia(18%) saturate(1165%)
+                hue-rotate(86deg) brightness(90%) contrast(94%);
         }
 
         @media (hover: hover) {
@@ -259,19 +262,40 @@
                 border-radius: 0;
             }
 
-            .title p {
-                
+        }
+
+         @media (max-width: 1050px) {
+            .scanner img{
+                display: none;
+            }
+
+            .scanner p{
+                display: none;
+
             }
 
 
         }
 
-        /* @media (max-width: 524px) {
-            .title p{
-                padding: 25px;
-            }
-        } */
 
+        .scanner{
+            display: flex;
+            position: fixed;
+            right: 40px;
+            bottom: 16px;
+            color: black;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .scanner img{
+            
+            height: 130px;
+            width: 130px;
+
+        }
 
 
 
@@ -470,10 +494,11 @@
 
         </a>
 
+
+
     </div>
 
     <footer></footer>
-
 <script>
 function openLink(el){
   window.open(el.dataset.url, '_blank');
@@ -500,5 +525,11 @@ function sharePage(e){
 
 
 </div>
+
+    <div class="scanner">
+        <p>View on mobile</p>
+        <img src="/assets/qrcode.png" alt="">    
+    </div>
+
 </body>
 </html>
